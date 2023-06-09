@@ -31,4 +31,10 @@ public class UserController {
 
     }
 
+    @GetMapping("/username")
+    public ResponseEntity<List<String>>getUsernames(){
+        return new ResponseEntity<>(userService.getUsernames(),HttpStatus.OK);
+    }
+
+
 }

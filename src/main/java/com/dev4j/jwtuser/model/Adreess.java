@@ -11,7 +11,7 @@ public class Adreess {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "street")
+    @Column(name = "street", nullable = false,length = 255)
     private String street;
     @Column(name = "number")
     private String number;

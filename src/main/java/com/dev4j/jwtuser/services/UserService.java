@@ -34,6 +34,11 @@ public class UserService {
                         String.format("No encontrado")));
     }
 
+    public List<String> getUsernames(){
+        return userReposiory.findUsernames();
+
+    }
+
 
 
 }
